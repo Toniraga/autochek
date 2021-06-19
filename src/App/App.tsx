@@ -1,10 +1,16 @@
 import React from 'react';
+import Permits from './components/Permits';
+
+import { NavFoot, NavTop } from './components/Nav';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="app">
-      hello
+      <NavTop />
+      <div className='permit_head'> Permits </div>
+      <Permits />
+      <NavFoot />
     </div>
   );
 }

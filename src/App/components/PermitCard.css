@@ -1,0 +1,98 @@
+.card {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  height: 80px;
+  width: 90%;
+  background-color: #e7e7e7; 
+  cursor: pointer; 
+  border-bottom: 1px solid #ccc;
+}
+
+.card:hover {
+  background-color: rgb(200, 225, 230);
+}
+
+.card_right {
+  font-family: Roboto;
+  border-left: 2px solid #bbb;
+  margin-left: 10px;
+  padding-left: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card_right p {
+  margin-left: 5px;
+}
+
+.card_right :nth-child(1) {
+  font-weight: 600;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.card_right :nth-child(2) {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.card_right :nth-child(3) {
+  font-size: 13px;
+}
+
+.card_right :nth-child(4),
+.card_right :nth-child(5),
+.card_right :nth-child(6) {
+  font-size: 13px;
+  color: #555;
+  font-weight: 600;
+}
+
+.card_body {
+  width: 90%;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  padding: 25px;
+}
+
+.card_body div p{
+  padding: 5px 0;
+  font-size: 13px;
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card_body div p span {
+  font-size: 11px;
+  margin-left: 15px;
+  color: #555;
+}
+
+.card_body :nth-child(1),
+.card_body :nth-child(2) {
+  flex: 0.5;
+}
+
+@media (max-width: 500px) {
+  .card_right {
+    font-size: 12px;
+  }
+
+  .card_body {
+    flex-direction: column;
+  }
+
+  .card_right :nth-child(1),
+  .card_right :nth-child(2),
+  .card_right :nth-child(3),
+  .card_right :nth-child(4)
+  .card_right :nth-child(5)
+  .card_right :nth-child(6) {
+    font-size: 10px !important;
+  }
+}

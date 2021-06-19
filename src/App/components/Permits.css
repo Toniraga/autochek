@@ -1,0 +1,24 @@
+.permits {
+  height: 50px;
+  width: 90%;
+  background-color: #404F6B;
+  padding: 0 50px;
+  margin-bottom: 20px;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-top: 10px;  
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .permits {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .reported_cost {
+    display: none;
+  }
+}
