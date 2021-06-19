@@ -1,1 +1,4 @@
 export const GET_PERMITS = 'GET_PERMITS';
+
+export const GET_PERMITS_SUCCESS = 'GET_PERMITS_SUCCESS';
+export const GET_PERMITS_FAIL = 'GET_PERMITS_FAIL';
