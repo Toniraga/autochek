@@ -15,8 +15,6 @@ const Permits: React.FC = () => {
     error
   } = useSelector((state: storeType) => state.permits);
 
-  console.log(permits, 'permits')
-
   useEffect(() => {
     dispactch(getPermits())
   }, [])
