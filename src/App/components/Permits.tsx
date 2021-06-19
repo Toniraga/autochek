@@ -31,7 +31,7 @@ const Permits: React.FC = () => {
       <div className='permits'>
         <p style={{flex: 0.16}}> Permit id </p>
         <p style={{flex: 0.20}}> Street name </p>
-        <p style={{flex: 0.28}}> Permit type </p>
+        <p style={{flex: 0.28}} className='permit_type'> Permit type </p>
         <p style={{flex: 0.14}}> Total fee </p>
         <p style={{flex: 0.16}} className='reported_cost'> Reported cost </p>
         <p style={{flex: 0.14}}> City </p>
